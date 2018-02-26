@@ -1,0 +1,8 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magestore_Faq::faq" title="Faq" module="Magestore_Faq"
+             sortOrder="31" resource="Magestore_Faq::faq"/>
+        <add id="Magestore_Faq::faq_manage" title="Manage Faq" module="Magestore_Faq"
+             sortOrder="1" parent="Magestore_Faq::faq" action="faqadmin/film/index" resource="Magestore_Faq::faq_manage"/>
+    </menu>
+</config>

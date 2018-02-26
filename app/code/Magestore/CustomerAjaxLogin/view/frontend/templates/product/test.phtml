@@ -1,0 +1,24 @@
+<?php
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magestore\CustomerAjaxLogin\Block\Product\Test */
+?>
+<div class="product_test" id="product_test" data-bind="scope:'product_test'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+        {
+            "#product_test": {
+               "Magento_Ui/js/core/app": {
+                    "components" : {
+                        "product_test": {
+                            "component": "Magestore_CustomerAjaxLogin/js/view/productTest",
+                            "defaultQty": "<?php echo $block->getProductDefaultQty(); ?>",
+                            "defaultPrice": "<?php echo $block->getProductDefaultPrice(); ?>",
+                            "ajaxGetProductUrl": "<?php echo $block->getAjaxGetProductUrl(); ?>"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</div>

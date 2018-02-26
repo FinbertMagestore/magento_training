@@ -1,0 +1,13 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+      layout="1column">
+    <head>
+        <title>Products</title>
+        <css src="Magestore_Faq::css/faq.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block name="faq" class="Magestore\Faq\Block\Product" template="Magestore_Faq::product.phtml" />
+        </referenceContainer>
+    </body>
+</page>

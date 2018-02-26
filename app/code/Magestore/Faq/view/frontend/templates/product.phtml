@@ -1,0 +1,19 @@
+<?php
+/* @var Magestore\Faq\Block\Product $block */
+?>
+<?php
+$collection = $block->getProductCollection();
+?>
+
+<div class="product-list">
+    <div class="product">
+        <ul>
+            <?php
+            foreach ($collection as $productModel) : ?>
+                <li>
+                    <div class="box"><?php echo $productModel->getName(); ?></div>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</div>

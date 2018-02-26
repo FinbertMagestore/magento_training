@@ -1,0 +1,28 @@
+<!--
+ ~ * Copyright © 2016 Magestore. All rights reserved.
+ ~ * See COPYING.txt for license details.
+ ~
+ -->
+<div class="order-pages">
+    <!-- ko ifnot: orderData -->
+    <div class="col-sm-8 col-left">
+        <header class="o-header">
+            <nav class="o-header-nav">
+                <span></span>
+                <label class="title" data-bind="text: ('Order Details')"></label>
+                <span></span>
+            </nav>
+        </header>
+        <main class="main-content main-content-no-order">
+            <div class="pos-machine icon-info"></div>
+            <div class="text-note">
+                <span class="icon-iconPOS-empty-order"></span>
+                <h4 class="title-box" data-bind="text: ('You don\'t have any orders yet')"></h4>
+            </div>
+        </main>
+    </div>
+    <!--/ko-->
+</div>
+<!-- /ko -->
+</div>
+

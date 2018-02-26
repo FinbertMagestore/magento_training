@@ -1,0 +1,38 @@
+<ul>
+    <li>
+        <label>Price</label>
+        <input data-bind="attr: {value: price, title: $t('Price')}, event:{change: priceChanged}"
+               type="number"
+               name="price"
+               id="price"
+               maxlength="12"
+               class="input-text price"
+               data-validate="{'required-number':true, digits:true}"
+        />
+    </li>
+    <li>
+        <label>Qty</label>
+        <input data-bind="attr: {value: qty, title: $t('Qty')}, event:{change: qtyChanged}"
+               type="number"
+               name="qty"
+               id="qty"
+               maxlength="12"
+               class="input-text qty"
+               data-validate="{'required-number':true, digits:true}"
+        />
+    </li>
+    <li>
+        <label> Total price:
+            <span data-bind="text: totalPrice"></span>
+        </label>
+    </li>
+    <li>
+        <button data-bind="attr: {title: $t('Get 10 product')}, click: getProduct" class="get-product">Get 10 product</button>
+        <label>Products</label>
+        <ul data-bind="foreach: productList">
+            <li>
+                <span data-bind="text: $data.name"></span>:
+            </li>
+        </ul>
+    </li>
+</ul>
